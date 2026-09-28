@@ -1,0 +1,44 @@
+/* Tipografia desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilos generales de la pagina */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #fdfbfb;
+    color: #2b2b2b;
+}
+
+/* Titulos y textos */
+h1 { 
+    color: #d87093;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 { 
+    color: #d87093;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+p { 
+    color: rgb(137, 75, 137);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Menu de navegacion */
+.nav-ul li { 
+    list-style: none;
+}
+
+.nav-ul li a { 
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+/* Footer */
+.p-footer { 
+    color: rgb(98, 98, 202);
+}
