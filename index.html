@@ -3,56 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS --> 
-     <link rel="stylesheet" href="styles/style.css"
-    <title>Inicio - Mi Sitio Web</title>
+    
+    <!-- Cargamos la fuente Montserrat para que sea igual a todo el sitio -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Ruta corregida del CSS para la página principal --> 
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Verdad o Reto</title>
 </head>
 <body>
 
     <header>
-        <p><strong>Mi Marca / Logotipo</strong></p>
+        <p><strong>🔥 Verdad o Reto</strong></p>
         <nav>
             <ul class="nav-ul">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/sobre-mi.html">Sobre mí</a></li>
-                <li><a href="pages/proyectos.html">Proyectos</a></li>
-                <li><a href="pages/servicios.html">Servicios</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="pages/categorias.html">Categorías</a></li>
+                <li><a href="pages/como_jugar.html">Cómo Jugar</a></li>
+                <li><a href="pages/pedirenlinea.html">Pedir en línea</a></li>
+                <li><a href="pages/contacto.html">Contáctanos</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main style="max-width: 900px; margin: 40px auto; padding: 0 20px; font-family: 'Montserrat', sans-serif; text-align: center;">
+        
         <!-- Sección de Presentación -->
-        <section>
-            <h1>Bienvenidos a mi Sitio Web</h1>
-            <p>Espacio dedicado a presentar mi trabajo, proyectos y servicios profesionales.</p>
+        <section class="hero" style="margin-bottom: 40px;">
+            <h1 style="color: #831843; font-size: 2.2rem; font-weight: 800; margin-bottom: 10px;">Verdad o Reto, Beber o Confesar 🎯🎭</h1>
+            <p style="color: #6b21a8; font-size: 1.1rem; font-weight: 600;">Es hora de romper el hielo y hacer cosas atrevidas, lo que sobrio no confesarías.</p>
         </section>
 
         <!-- Sección de Información General Breve -->
-        <section>
-            <h2 class="p-footer">Información General</h2>
-            <p>Soy desarrolladora en formación enfocada en crear soluciones digitales semánticas, accesibles y funcionales.</p>
-        </section>
-
-        <!-- Sección de Destacados / Servicios / Herramientas -->
-        <section>
-            <h2 class="p-footer">Mis Destacados y Herramientas</h2>
-            <ul>
-                <li>Desarrollo Web Frontend (HTML5, CSS3)</li>
-                <li>Diseño de Interfaces Accesibles</li>
-                <li>Gestión de Proyectos Digitales</li>
+        <section id="categorias" style="margin-bottom: 40px; text-align: left;">
+            <h2 class="titulo-seccion" style="text-align: center; color: #db2777; font-size: 1.8rem; margin-bottom: 20px;">Tipos de Juegos y Dinámicas</h2>
+            <ul class="lista-juegos" style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 12px; line-height: 1.6; color: #374151;">
+                    <strong>🔥 Verdad o Reto:</strong> Disponible con opciones digitales y en formato de cartas físicas. ¡Ideal para parejas o grupos!
+                </li>
+                <li style="margin-bottom: 12px; line-height: 1.6; color: #374151;">
+                    <strong>🎲 ¿Qué probabilidad hay?:</strong> Cuenta hasta tres, di un número y descubre quién se atreve a cumplir el reto.
+                </li>
+                <li style="margin-bottom: 12px; line-height: 1.6; color: #374151;">
+                    <strong>🍻 Yo Nunca Nunca:</strong> Prepárate para descubrir los secretos más divertidos y tomar un trago si ya has caído en la tentación.
+                </li>
+                <li style="margin-bottom: 12px; line-height: 1.6; color: #374151;">
+                    <strong>⚖️ ¿Qué prefieres?:</strong> Decisiones rápidas, incómodas y divertidas entre dos opciones extremas.
+                </li>
             </ul>
         </section>
 
         <!-- Sección con Imagen Semántica -->
-        <section>
-            <h2 id="unico">Imagen Destacada</h2>
-            <figure>
-                <img src="images.jpeg" alt="Fotografía de un espacio de trabajo con una computadora portátil y código en pantalla">
-                <figcaption>Espacio de trabajo donde desarrollo mis proyectos web.</figcaption>
+        <section style="margin-bottom: 40px;">
+            <h2 id="unico" style="color: #831843; font-size: 1.8rem; margin-bottom: 15px;">Juego físico</h2>
+            <figure style="margin: 0;">
+                <img src="Assets/portada_.jpeg" alt="Fotografía del juego Verdad o Reto" style="max-width: 100%; width: 650px; border-radius: 14px; display: block; margin: 0 auto; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                <figcaption style="color: #6b21a8; font-size: 0.95rem; margin-top: 10px;">Cartas físicas que tendrás si compras el juego.</figcaption>
             </figure>
         </section>
+
     </main>
 
     <footer>
