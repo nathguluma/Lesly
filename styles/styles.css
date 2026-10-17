@@ -1,10 +1,15 @@
-/* Tipografía desde Google Fonts */
+
+/* ==========================================
+   1. tipografia y base 
+   ========================================== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Estilos base */
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(135deg, #fce7f3 0%, #f3e8ff 100%);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #fdf4ff; /* Fondo sólido personalizado */
     color: #2b2b2b;
     margin: 0;
     padding: 0;
@@ -13,13 +18,14 @@ body {
     flex-direction: column;
 }
 
-/* Tipografía global */
+/* Tipografia global y jerarquoa */
+
 h1, h2, h3, h4, p, li, label, span {
     font-family: 'Montserrat', sans-serif;
 }
 
 h1 { 
-    color: #831843;
+    color: #831843; /* Color Primario */
     font-size: 2.2rem;
     font-weight: 800;
     text-align: center;
@@ -46,15 +52,17 @@ p, li, label, span {
     font-weight: 400;
 }
 
-/* Encabezado y navegación */
+/* ==========================================
+   2. navegación
+   ========================================== */
 header {
-    background-color: #1f1b24;
-    color: #fff;
+    background-color: #1f1b24; /* Color Secundario */
+    color: #ffffff;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid #d87093;
+    border-bottom: 3px solid #d87093; /* Color Acento */
 }
 
 header p strong {
@@ -74,14 +82,16 @@ header p strong {
     color: #e2e8f0;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
 }
 
 .nav-ul li a:hover {
-    color: #f472b6;
+    color: #d87093;
 }
 
-/* Contenedor principal */
+/* ==========================================
+   3. contenidoss
+   ========================================== */
 main {
     max-width: 900px;
     margin: 40px auto;
@@ -91,7 +101,7 @@ main {
     box-sizing: border-box;
 }
 
-/* Estilos para la página de inicio (index) */
+/* Inicio y Secciones */
 .hero {
     margin-bottom: 40px;
     text-align: center;
@@ -131,10 +141,10 @@ main {
 .img-portada {
     max-width: 100%;
     width: 650px;
-    border-radius: 14px;
+    border-radius: 12px;
     display: block;
     margin: 0 auto;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border: 2px solid #fbcfe8;
 }
 
 figcaption {
@@ -143,7 +153,7 @@ figcaption {
     margin-top: 10px;
 }
 
-/* Sección de cómo jugar y reglas */
+/* como jugar y reglas */
 .lista-reglas {
     display: flex;
     flex-direction: column;
@@ -153,22 +163,15 @@ figcaption {
 .regla-item {
     background: #ffffff;
     padding: 16px 20px;
-    border-radius: 14px;
+    border-radius: 12px;
     border: 1px solid #fbcfe8;
     display: flex;
     align-items: flex-start;
     gap: 16px;
-    box-shadow: 0 2px 8px rgba(131, 24, 67, 0.04);
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.regla-item:hover {
-    transform: translateX(5px);
-    border-color: #d87093;
 }
 
 .num-regla {
-    background: linear-gradient(135deg, #d87093 0%, #9333ea 100%);
+    background-color: #d87093;
     color: #ffffff;
     font-weight: bold;
     font-size: 1.1rem;
@@ -196,10 +199,10 @@ figcaption {
 }
 
 .caja-cierre-reglas {
-    background: rgba(253, 244, 255, 0.8);
-    border: 2px dashed #f472b6;
+    background-color: #ffffff;
+    border: 2px dashed #d87093;
     padding: 25px;
-    border-radius: 16px;
+    border-radius: 12px;
     text-align: center;
     margin-top: 20px;
 }
@@ -226,43 +229,9 @@ figcaption {
     margin: 0 auto;
 }
 
-.reglas-container {
-    margin: 50px 0;
-    text-align: left;
-}
-
-.tarjeta-reglas {
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 35px 30px;
-}
-
-.badge-contrato {
-    align-self: center;
-    margin-bottom: 20px;
-}
-
-.titulo-contrato {
-    text-align: center;
-    color: #831843;
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-}
-
-.subtitulo-contrato {
-    text-align: center;
-    color: #6b21a8;
-    font-size: 1.1rem;
-    margin-bottom: 25px;
-    font-weight: 600;
-}
-
-.btn-contrato {
-    display: inline-block;
-    padding: 12px 30px;
-}
-
-/* Tarjetas y catálogo */
+/* ==========================================
+   4. categorias
+   ========================================== */
 .subtitulo-catalogo {
     text-align: center;
     color: #701a75;
@@ -280,23 +249,16 @@ figcaption {
 .game-card {
     background: #ffffff;
     border: 2px solid #fbcfe8;
-    border-radius: 20px;
+    border-radius: 16px;
     padding: 30px;
-    box-shadow: 0 10px 25px rgba(131, 24, 67, 0.08);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 12px;
-    transition: transform 0.3s ease;
-}
-
-.game-card:hover {
-    transform: translateY(-5px);
-    border-color: #d87093;
 }
 
 .game-card.featured {
-    background: linear-gradient(135deg, #fdf4ff 0%, #fae8ff 100%);
+    background-color: #faf5ff;
     border: 2px solid #c084fc;
 }
 
@@ -307,8 +269,8 @@ figcaption {
 }
 
 .badge, .badge-special {
-    background: #d87093;
-    color: white;
+    background-color: #d87093;
+    color: #ffffff;
     padding: 5px 12px;
     font-size: 0.8rem;
     font-weight: bold;
@@ -317,13 +279,13 @@ figcaption {
 }
 
 .badge-special {
-    background: #9333ea;
+    background-color: #9333ea;
 }
 
 .precio {
     font-size: 2rem;
     font-weight: bold;
-    color: #d87093;
+    color: #831843;
 }
 
 .descripcion {
@@ -344,40 +306,34 @@ figcaption {
     font-size: 0.9rem;
 }
 
-.extras {
-    background: rgba(192, 132, 252, 0.1);
-    padding: 15px;
-    border-radius: 10px;
-}
-
 .btn-pedir {
     display: block;
     text-align: center;
-    background: linear-gradient(135deg, #d87093 0%, #9333ea 100%);
-    color: white;
+    background-color: #d87093;
+    color: #ffffff;
     text-decoration: none;
     padding: 12px;
-    border-radius: 10px;
+    border-radius: 8px;
     font-weight: bold;
-    transition: opacity 0.2s ease;
-    box-shadow: 0 4px 12px rgba(216, 112, 147, 0.3);
+    transition: background-color 0.2s ease;
 }
 
 .btn-pedir:hover {
-    opacity: 0.9;
+    background-color: #831843;
 }
 
-/* Formularios */
-form {
+/* ==========================================
+   5. pedir en línea, formulario  
+   ========================================== */
+form, .form-pedido {
     background: #ffffff;
     padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(131, 24, 67, 0.1);
+    border-radius: 16px;
     border: 2px solid #fbcfe8;
     margin-top: 20px;
 }
 
-form div {
+form div, .campo-form {
     margin-bottom: 20px;
 }
 
@@ -395,63 +351,38 @@ select,
 textarea {
     width: 100%;
     padding: 12px;
-    border: 2px solid #e879f9;
+    border: 2px solid #f472b6;
     border-radius: 8px;
-    background-color: #fdf4ff;
+    background-color: #ffffff;
     font-size: 1rem;
     box-sizing: border-box;
-    transition: all 0.3s ease;
 }
 
 input:focus, select:focus, textarea:focus {
     outline: none;
-    border-color: #d87093;
-    background-color: #fff;
-    box-shadow: 0 0 8px rgba(216, 112, 147, 0.2);
-}
-
-.delivery-banner {
-    background: linear-gradient(135deg, #f472b6 0%, #c084fc 100%);
-    color: white;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 15px rgba(192, 132, 252, 0.3);
-}
-
-.delivery-banner h3 {
-    margin: 0 0 8px 0;
-    font-size: 1.2rem;
-    color: white;
-}
-
-.delivery-banner p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: #fdf4ff;
+    border-color: #831843;
 }
 
 button[type="submit"] {
     width: 100%;
-    background: linear-gradient(135deg, #d87093 0%, #9333ea 100%);
-    color: white;
+    background-color: #d87093;
+    color: #ffffff;
     border: none;
     padding: 14px;
     font-size: 1.1rem;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-    box-shadow: 0 4px 12px rgba(216, 112, 147, 0.3);
+    transition: background-color 0.2s ease;
 }
 
 button[type="submit"]:hover {
-    transform: translateY(-2px);
-    opacity: 0.95;
+    background-color: #831843;
 }
 
-/* Categorías */
+/* ==========================================
+   6. pie de página
+   ========================================== */
 .seccion-categoria {
     margin-bottom: 35px;
 }
@@ -462,12 +393,6 @@ button[type="submit"]:hover {
     border-radius: 16px;
     padding: 24px;
     margin-top: 15px;
-    box-shadow: 0 4px 12px rgba(131, 24, 67, 0.05);
-}
-
-.articulo-categoria figure {
-    margin: 15px 0 0 0;
-    text-align: center;
 }
 
 .img-categoria {
@@ -476,10 +401,8 @@ button[type="submit"]:hover {
     border-radius: 12px;
     display: block;
     margin: 0 auto;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
 }
 
-/* Pie de página */
 footer {
     background-color: #1f1b24;
     color: #cbd5e1;
@@ -498,202 +421,5 @@ footer ul {
 }
 
 .p-footer { 
-    color: #818cf8;
-}
-
-/* Estilos para Pedir en Línea */
-.extra-espacio-top {
-    margin-top: 15px;
-}
-
-.texto-extra-card {
-    margin: 0;
-    color: #374151;
-    font-size: 0.95rem;
-}
-
-.desc-espacio {
-    margin-bottom: 15px;
-}
-
-.extra-dilemas {
-    margin: 0 0 20px 0;
-    padding: 12px;
-}
-
-.texto-extra-dilemas {
-    margin: 0;
-    color: #374151;
-    font-size: 0.9rem;
-    line-height: 1.4;
-}
-
-.tarjeta-incluye {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 40px;
-}
-
-.desc-incluye {
-    font-size: 1.1rem;
-    margin-bottom: 25px;
-}
-
-.lista-incluye {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
-}
-
-.item-incluye {
-    background: #ffffff;
-    padding: 15px;
-    border-radius: 12px;
-    border: 1px solid #fbcfe8;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.emoji-incluye {
-    font-size: 1.5rem;
-}
-
-.subtitulo-pedido {
-    text-align: center;
-    color: #6b21a8;
-    margin-bottom: 25px;
-}
-
-.form-pedido {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(131, 24, 67, 0.1);
-    border: 2px solid #fbcfe8;
-    margin-top: 20px;
-}
-
-.caja-seleccion-juegos {
-    background: #fdf4ff;
-    padding: 20px;
-    border-radius: 14px;
-    border: 2px solid #e879f9;
-    margin-bottom: 25px;
-}
-
-.label-titulo-juegos {
-    font-size: 1.2rem;
-    color: #831843;
-    margin-bottom: 15px;
-    display: block;
-    font-weight: bold;
-}
-
-.grupo-juego {
-    margin-bottom: 15px;
-}
-
-.grupo-juego-simple {
-    margin-bottom: 10px;
-}
-
-.label-checkbox-juego {
-    font-weight: normal;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-}
-
-.checkbox-custom {
-    width: 18px;
-    height: 18px;
-}
-
-.opciones-desplegables {
-    display: none;
-    margin-top: 12px;
-    padding: 15px;
-    background: #ffffff;
-    border-radius: 10px;
-    border: 1px solid #fbcfe8;
-}
-
-.label-subtitulo-opciones {
-    color: #701a75;
-    font-size: 0.95rem;
-    margin-bottom: 8px;
-    display: block;
-    font-weight: bold;
-}
-
-.opcion-radio {
-    margin-bottom: 10px;
-}
-
-.label-radio {
-    font-weight: normal;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-}
-
-.lista-desplegable-categorias {
-    display: none;
-    margin-top: 12px;
-    padding-left: 15px;
-    border-left: 3px solid #f472b6;
-}
-
-.instruccion-categorias {
-    font-size: 0.9rem;
-    color: #6b21a8;
-    margin-bottom: 8px;
-}
-
-.label-categoria-item {
-    font-weight: normal;
-    display: block;
-    margin-bottom: 6px;
-    cursor: pointer;
-}
-
-.campo-form {
-    margin-bottom: 20px;
-}
-
-/* Estilos para Contacto */
-.hero-contacto {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.subtitulo-contacto {
-    color: #6b21a8;
-    font-size: 1.1rem;
-    font-weight: 600;
-}
-
-.seccion-canales,
-.seccion-redes {
-    margin-bottom: 30px;
-}
-
-.lista-canales {
-    list-style: none;
-    padding: 0;
-    margin-top: 15px;
-}
-
-.lista-canales li {
-    background: #ffffff;
-    padding: 14px 18px;
-    border-radius: 10px;
-    border: 1px solid #fbcfe8;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 6px rgba(131, 24, 67, 0.03);
+    color: #f472b6;
 }
