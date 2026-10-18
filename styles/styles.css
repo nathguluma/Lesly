@@ -26,6 +26,7 @@ h2 {
     color: #831843; /* Color primario */
     font-size: 2rem;
     font-weight: 600;
+     text-align: center;
 }
 
 p { 
