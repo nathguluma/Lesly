@@ -26,13 +26,28 @@ h2 {
     color: #831843; /* Color primario */
     font-size: 2rem;
     font-weight: 600;
-     text-align: center;
+    text-align: center;
+}
+
+h3 { 
+    color: #831843; /* Color primario */
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
 }
 
 p { 
     color: #894b89; /* Color secundario */
     font-size: 1.2rem;
     font-weight: 400;
+    text-align: center;
+}
+/* ==========================================
+   Imágenes
+   ========================================== */
+figure {
+    text-align: center;
+    margin: 20px 0;
 }
 
 /* ==========================================
