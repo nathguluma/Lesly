@@ -3,6 +3,15 @@
    ========================================== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* { 
+    list-style: none;
+}
+
 /* 1rem = 16px */
 body {
     font-family: "Montserrat", sans-serif;
@@ -12,56 +21,90 @@ body {
     padding: 0;
 }
 
+header {
+    background-color: #d9a1e6; /* fondo */
+    padding: 1.25rem 0;
+    text-align: center;
+    border-bottom: 0.125rem solid #d68eab; /* Linea de separacion */
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}   
+.nav-ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 1.5rem;
+}
 /* ==========================================
    Titulos y textos
    ========================================== */
 h1 { 
     color: #831843; /* Color primario en HEX */
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
     text-align: center;
 }
 
 h2 { 
     color: #831843; /* Color primario */
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 600;
     text-align: center;
 }
 
 h3 { 
-    color: #831843; /* Color primario */
-    font-size: 1.5rem;
+    color: #2e1f2d; /* Color primario */
+    font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
 }
 ol {
+    color: #7b1b8f; /* Color secundario */
     list-style-position: inside;
     text-align: center;
     padding: 0;
+    font-size: 1.3rem;
 }
-
+ol li {
+    font-size: 1.3rem;
+}
 li div {
     text-align: center;
 }
 
 strong { 
     color: #831843;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 p { 
-    color: #894b89; /* Color secundario */
-    font-size: 1.2rem;
+    color: #200720; /* Color secundario */
+    font-size: 1.4rem;
     font-weight: 400;
     text-align: center;
 }
+li {
+    text-align: center;
+}
+
 /* ==========================================
    Imágenes
    ========================================== */
 figure {
     text-align: center;
     margin: 20px 0;
+}
+.images-1 img {
+    width: auto;
+    height: auto;
+    border: 0.125rem solid #d68eab; /* Borde de la imagen */
+    border-radius: 10px; /* Bordes redondeados */  
 }
 
 /* ==========================================
@@ -71,16 +114,100 @@ figure {
     color: #6262ca; /* Color de acento */
 }
 
-.nav-ul {
+
+/* ==========================================
+   margenes y fondos
+   ========================================== */
+.contrato-todosi {
+border : 1rem solid #b180b9;
+background-color: #ebbaf5;
+}
+.jugar-section {
+  padding: 20px;
+}
+
+/* ==========================================
+   Catalogo de pedir en linea
+   ========================================== */
+.catalogo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.juego-card {
+    background-color: #fdf4ff;
+    border: 1px solid #d68eab;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+.juego-card h3 {
+    color: #831843;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.juego-card h2 {    
+    color: #2e1f2d;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.juego-card p {             
+    color: #200720;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.precio {
+    color: #831843;
+    font-size: 1.5rem;
+    font-weight: bold;
+}          
+/* ==========================================
+   Formulario para pedir en linea
+   ========================================== */
+ .formulario-section {
+  flex: 1;
+ min-width: 300px;
+  max-width: 550px;
+}
+.datos {
+    margin-bottom: 15px;
+    border: none;
     padding: 0;
-    margin: 0;
+}
+.datos label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.datos input,
+.datos select,
+.datos textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d68eab;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.juego-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #d68eab;
+    border-radius: 5px;
+}
+.presentation {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #d68eab;
+    border-radius: 5px;
+}
+.pedido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
 }
 
-.nav-ul li { 
-    list-style: none;
-}
-
-.nav-ul li a { 
-    color: #000000;
-    text-decoration: none;
-}
