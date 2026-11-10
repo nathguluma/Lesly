@@ -8,71 +8,75 @@
     padding: 0;
     box-sizing: border-box;
 }
-* { 
-    list-style: none;
-}
 
-/* 1rem = 16px */
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #fdf4ff; /* Fondo personalizado sólido */
+    background-color: #fdf4ff; 
     color: #2b2b2b;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #d9a1e6; /* fondo */
-    padding: 1.25rem 0;
+    background-color: #d9a1e6; 
+    padding: 20px 0;
     text-align: center;
-    border-bottom: 0.125rem solid #d68eab; /* Linea de separacion */
+    border-bottom: 2px solid #d68eab;
 }
+
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px
 }   
+
 .nav-ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  gap: 1.5rem;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
 }
+
 /* ==========================================
-   Titulos y textos
+   Títulos y textos
    ========================================== */
 h1 { 
-    color: #831843; /* Color primario en HEX */
+    color: #831843; 
     font-size: 2.2rem;
     font-weight: 700;
     text-align: center;
 }
 
 h2 { 
-    color: #831843; /* Color primario */
+    color: #831843; 
     font-size: 1.7rem;
     font-weight: 600;
     text-align: center;
 }
 
 h3 { 
-    color: #2e1f2d; /* Color primario */
+    color: #2e1f2d; 
     font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
 }
+
 ol {
-    color: #7b1b8f; /* Color secundario */
+    color: #7b1b8f; 
     list-style-position: inside;
     text-align: center;
     padding: 0;
     font-size: 1.3rem;
 }
+
 ol li {
     font-size: 1.3rem;
 }
+
 li div {
     text-align: center;
 }
@@ -84,11 +88,12 @@ strong {
 }
 
 p { 
-    color: #200720; /* Color secundario */
+    color: #200720; 
     font-size: 1.4rem;
     font-weight: 400;
     text-align: center;
 }
+
 li {
     text-align: center;
 }
@@ -100,88 +105,99 @@ figure {
     text-align: center;
     margin: 20px 0;
 }
+
 .images-1 img {
     width: auto;
     height: auto;
-    border: 0.125rem solid #d68eab; /* Borde de la imagen */
-    border-radius: 10px; /* Bordes redondeados */  
+    border: 2px solid #d68eab;
+    border-radius: 10px;  
+    max-width: 100%;
+    height: auto;
 }
 
 /* ==========================================
    Navegación y pie de página
    ========================================== */
 .p-footer { 
-    color: #6262ca; /* Color de acento */
+    color: #6262ca; 
 }
 
-
 /* ==========================================
-   margenes y fondos
+   Márgenes y fondos
    ========================================== */
 .contrato-todosi {
-border : 1rem solid #b180b9;
-background-color: #ebbaf5;
+    border: 10px solid #b180b9;
+    background-color: #ebbaf5;
 }
+
 .jugar-section {
-  padding: 20px;
+    padding: 20px;
 }
 
 /* ==========================================
-   Catalogo de pedir en linea
+   Catálogo de pedir en línea
    ========================================== */
 .catalogo-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     padding: 20px;
 }
+
 .juego-card {
     background-color: #fdf4ff;
     border: 1px solid #d68eab;
     border-radius: 10px;
     padding: 20px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
     text-align: center;
 }
+
 .juego-card h3 {
     color: #831843;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
+
 .juego-card h2 {    
     color: #2e1f2d;
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
+
 .juego-card p {             
     color: #200720;
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
+
 .precio {
     color: #831843;
     font-size: 1.5rem;
     font-weight: bold;
 }          
+
 /* ==========================================
-   Formulario para pedir en linea
+   Formulario para pedir en línea y Grid Layout
    ========================================== */
- .formulario-section {
-  flex: 1;
- min-width: 300px;
-  max-width: 550px;
+.formulario-section {
+    width: 100%;
 }
+
 .datos {
     margin-bottom: 15px;
     border: none;
     padding: 0;
 }
+
 .datos label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
+
 .datos input,
 .datos select,
 .datos textarea {
@@ -191,23 +207,49 @@ background-color: #ebbaf5;
     border-radius: 5px;
     font-size: 1rem;
 }
+
 .juego-section {
     margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #d68eab;
-    border-radius: 5px;
-}
-.presentation {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #d68eab;
-    border-radius: 5px;
-}
-.pedido {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
     padding: 20px;
+    border: 1px solid #d68eab;
+    border-radius: 5px;
 }
 
+.presentation {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #d68eab;
+    border-radius: 5px;
+}
+
+/* --- Mobile First --- */
+.pedido {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "juegos"
+        "datos";
+    gap: 30px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Asignación a hijos */
+.pedido > *:nth-child(1) {
+    grid-area: juegos;
+}
+
+.pedido > *:nth-last-child(1) {
+    grid-area: datos;
+}
+
+/* --- Breakpoint Desktop */
+@media (min-width: 1024px) {
+    .pedido {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "juegos datos";
+    }
+}
