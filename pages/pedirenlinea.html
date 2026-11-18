@@ -3,44 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Pedir en Línea | Verdad o Reto</title>
 </head>
-<body>
+<body class="bg-light">
 
-    <header class="header">
-        <div class="nav">
-            <div class="logo"><strong>🔥 Verdad o Reto</strong></div>
-            <nav>
-                <ul class="nav-ul">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="categorias.html">Categorías</a></li>
-                    <li><a href="como_jugar.html">Cómo Jugar</a></li>
-                    <li><a href="pedirenlinea.html">Pedir en línea</a></li>
-                    <li><a href="contacto.html">Contáctanos</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #d9a1e6;">
+            <div class="container-fluid px-4">
+                <!-- Tu logo -->
+                <a class="navbar-brand" href="index.html" style="color: #831843; font-weight: bold;">🔥 Verdad o Reto</a>
+                
+                <!-- Botón hamburguesa para mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- adaptación links -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="categorias.html">Categorías</a></li>
+                        <li class="nav-item"><a class="nav-link" href="como_jugar.html">Cómo Jugar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pedirenlinea.html">Pedir en línea</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
+    <main class="container my-5">
         <!-- Sección de Catálogo de Juegos -->
-        <section>
-            <h1>Catálogo de Juegos 🔥</h1>
-            <p>Elige tu propia experiencia y vive momentos inolvidables</p>
+        <section class="text-center mb-5">
+            <h1 class="fw-bold" style="color: #831843;">Catálogo de Juegos 🔥</h1>
+            <p class="text-muted lead">Elige tu propia experiencia y vive momentos inolvidables</p>
 
             <!-- GRID DE TARJETAS -->
-            <div class="catalogo-grid">
+            <div class="catalogo-grid mt-4">
                 
                 <!-- Opción 1: Edición Estándar Personalizada -->
-                <article class="juego-card">
-                    <h3>Más Popular</h3>
+                <article class="juego-card shadow-sm border-0 p-4 rounded-4">
+                    <span class="badge mb-2" style="background-color: #831843; color: white;">Más Popular</span>
                     <h2>Verdad o Reto - Edición Personalizada</h2>
-                    <p class="precio">$99.900</p>
-                    <p>Edición Coleccionista · 250 cartas · 5 categorías a elección</p>
+                    <p class="precio fs-4 fw-bold" style="color: #831843;">$99.900</p>
+                    <p class="text-muted">Edición Coleccionista · 250 cartas · 5 categorías a elección</p>
                     
-                    <h3>Elige 5 de estas 8 categorías:</h3>
-                    <ul>
+                    <h3 class="h6 fw-bold mt-3">Elige 5 de estas 8 categorías:</h3>
+                    <ul class="list-unstyled text-start">
                         <li>💕 Parejas</li>
                         <li>🌶️ Amigos picante</li>
                         <li>😂 Amigos sin filtro</li>
@@ -53,23 +65,23 @@
                 </article>
 
                 <!-- Opción 2: Edición Completa -->
-                <article class="juego-card">
-                    <h3>Edición Completa</h3>
+                <article class="juego-card shadow-sm border-0 p-4 rounded-4">
+                    <span class="badge mb-2 bg-secondary text-white">Edición Completa</span>
                     <h2>Verdad o Reto - Edición Completa</h2>
-                    <p class="precio">$139.900</p>
-                    <p>Las 8 categorías · 400 cartas</p>
+                    <p class="precio fs-4 fw-bold" style="color: #831843;">$139.900</p>
+                    <p class="text-muted">Las 8 categorías · 400 cartas</p>
                     <p>🎁 <strong>Incluye:</strong> Un regalo especial y dos copas de shot adicionales.</p>
                 </article>
 
                 <!-- Opción 3: ¿Qué probabilidad hay? -->
-                <article class="juego-card">
-                    <h3>Nuevo & Retante</h3>
+                <article class="juego-card shadow-sm border-0 p-4 rounded-4">
+                    <span class="badge mb-2 bg-info text-dark">Nuevo & Retante</span>
                     <h2>¿Qué probabilidad hay?</h2>
-                    <p class="precio">$99.900</p>
-                    <p>Atrevimiento, tensión y decisiones · 250 cartas · 5 categorías</p>
+                    <p class="precio fs-4 fw-bold" style="color: #831843;">$99.900</p>
+                    <p class="text-muted">Atrevimiento, tensión y decisiones · 250 cartas · 5 categorías</p>
                     
-                    <h3>Categorías incluidas:</h3>
-                    <ul>
+                    <h3 class="h6 fw-bold mt-3">Categorías incluidas:</h3>
+                    <ul class="list-unstyled text-start">
                         <li>🌶️ Picantes</li>
                         <li>😈 Incómodas y comprometedoras</li>
                         <li>🔥 Extremas y atrevidas</li>
@@ -79,20 +91,20 @@
                 </article>
 
                 <!-- Opción 4: Yo nunca nunca -->
-                <article class="juego-card" >
-                    <h3>Para Revelar Secretos</h3>
+                <article class="juego-card shadow-sm border-0 p-4 rounded-4">
+                    <span class="badge mb-2 bg-warning text-dark">Para Revelar Secretos</span>
                     <h2>Yo nunca nunca</h2>
-                    <p class="precio">$99.900</p>
-                    <p>Secretos, experiencias y confesiones · 250 cartas</p>
+                    <p class="precio fs-4 fw-bold" style="color: #831843;">$99.900</p>
+                    <p class="text-muted">Secretos, experiencias y confesiones · 250 cartas</p>
                     <p>Diseñado para descubrir anécdotas, experiencias inesperadas y secretos del grupo. 🤫</p>
                 </article>
 
                 <!-- Opción 5: Qué prefieres -->
-                <article class="juego-card" >
-                    <h3>Debates & Dilemas</h3>
+                <article class="juego-card shadow-sm border-0 p-4 rounded-4">
+                    <span class="badge mb-2 bg-dark text-white">Debates & Dilemas</span>
                     <h2>¿Qué prefieres?</h2>
-                    <p class="precio">$80.000</p>
-                    <p>Decisiones imposibles y debates · 200 cartas</p>
+                    <p class="precio fs-4 fw-bold" style="color: #831843;">$80.000</p>
+                    <p class="text-muted">Decisiones imposibles y debates · 200 cartas</p>
                     <p>Dilemas divertidos, picantes, incómodos y situaciones que harán discutir al grupo sobre qué opción elegir. 🤔</p>
                 </article>
 
@@ -100,192 +112,203 @@
         </section>
 
         <!-- Sección: ¿Qué incluye cada juego? -->
-        <section class="contrato-todosi">
-            <h3>Experiencia Completa ✨</h3>
-            <h2>¿Qué incluye cada juego?</h2>
-            <p>Cada una de nuestras ediciones está diseñada para ofrecerte una experiencia prémium inolvidable desde el primer momento:</p>
+        <section class="contrato-todosi card border-0 shadow-sm p-4 mb-5 rounded-4 text-center" style="background-color: #fff0f6;">
+            <span class="text-uppercase fw-bold small" style="color: #831843;">Experiencia Completa ✨</span>
+            <h2 class="fw-bold mb-3">¿Qué incluye cada juego?</h2>
+            <p class="text-muted mb-4">Cada una de nuestras ediciones está diseñada para ofrecerte una experiencia prémium inolvidable desde el primer momento:</p>
 
-            <ul>
-                <li>🎡 Ruleta para escribir los nombres</li>
-                <li>🖍️ 4 marcadores borrables y borrador</li>
-                <li>📦 Caja organizadora prémium <small>(con reglas y contrato de confidencialidad)</small></li>
-                <li>🥃 4 copas de shot personalizadas para acompañar las partidas</li>
-                <li>🃏 3 cartas prémium para activar en el momento más intenso</li>
-                <li>⚡ 12 fichas de oportunidades (comodines para cambiar la dinámica)</li>
+            <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3">
+                <li class="bg-white px-3 py-2 rounded-pill shadow-sm">🎡 Ruleta para escribir nombres</li>
+                <li class="bg-white px-3 py-2 rounded-pill shadow-sm">🖍️ 4 marcadores y borrador</li>
+                <li class="bg-white px-3 py-2 rounded-pill shadow-sm">📦 Caja organizadora prémium</li>
+                <li class="bg-white px-3 py-2 rounded-pill shadow-sm">🥃 4 copas de shot personalizadas</li>
+                <li class="bg-white px-3 py-2 rounded-pill shadow-sm">🃏 3 cartas prémium</li>
+                <li class="bg-white px-3 py-2 rounded-pill shadow-sm">⚡ 12 fichas de oportunidades</li>
             </ul>
         </section>
 
-
- <main class="pedido">
-    <!-- SECCIÓN 1: SELECCIÓN DE JUEGOS -->
-    <section class="formulario-section section-juegos">
-        <h1>Haz tu pedido acá 🔥</h1>
-        <p>Diligencia tus datos de envío y selecciona tus juegos favoritos</p>
-
-        <form action="#" method="POST">
-            
-            <div style="margin-bottom: 20px;">
-                <label><strong>🎮 ¿Qué juegos deseas llevar? (Puedes seleccionar varios):</strong></label>
+        <!-- SECCIÓN DE FORMULARIO -->
+        <div class="card border-0 shadow-lg p-4 p-md-5 rounded-4 bg-white">
+            <form action="#" method="POST">
                 
-                <!-- Juego 1: Verdad o Reto -->
-                <div style="margin-top: 15px;">
-                    <label>
-                        <input type="checkbox" name="juegos[]" value="Verdad o Reto">
-                        <strong>Verdad o Reto</strong> (Personalizada: $99.900 o Edición Completa: $139.900)
-                    </label>
-                    
-                    <div class="juego-card" style="margin-top: 10px;">
-                        <label>Elige tu modalidad para Verdad o Reto:</label>
-                        <div>
-                            <label>
-                                <input type="radio" name="modalidad_vr" value="Edicion Personalizada">
-                                Edición Personalizada (Elige 5 categorías) - $99.900
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="radio" name="modalidad_vr" value="Edicion Completa">
-                                Edición Completa (Las 8 categorías + regalos y 2 copas de shot) - $139.900
-                            </label>
+                <!-- SECCIÓN 1: SELECCIÓN DE JUEGOS -->
+                <section class="formulario-section section-juegos mb-5">
+                    <h1 class="fw-bold fs-3" style="color: #831843;">Haz tu pedido acá 🔥</h1>
+                    <p class="text-muted">Diligencia tus datos de envío y selecciona tus juegos favoritos</p>
+
+                    <div class="mb-4 mt-4">
+                        <label class="form-label fw-bold">🎮 ¿Qué juegos deseas llevar? (Puedes seleccionar varios):</label>
+                        
+                        <!-- Juego 1: Verdad o Reto -->
+                        <div class="card p-3 mt-3 border-0 bg-light rounded-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="juegos[]" value="Verdad o Reto" id="juegoVr">
+                                <label class="form-check-label fw-bold" for="juegoVr">
+                                    Verdad o Reto (Personalizada: $99.900 o Edición Completa: $139.900)
+                                </label>
+                            </div>
+                            
+                            <div class="juego-card mt-3 ps-4 border-start border-3" style="border-color: #831843 !important;">
+                                <label class="form-label fw-semibold text-secondary">Elige tu modalidad para Verdad o Reto:</label>
+                                <div class="form-check mb-1">
+                                    <input class="form-check-input" type="radio" name="modalidad_vr" value="Edicion Personalizada" id="mod1">
+                                    <label class="form-check-label" for="mod1">Edición Personalizada (Elige 5 categorías) - $99.900</label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio" name="modalidad_vr" value="Edicion Completa" id="mod2">
+                                    <label class="form-check-label" for="mod2">Edición Completa (Las 8 categorías + regalos y 2 copas de shot) - $139.900</label>
+                                </div>
+
+                                <div class="p-3 bg-white rounded-3 border">
+                                    <p class="small fw-bold mb-2" style="color: #831843;">Selecciona exactamente 5 categorías:</p>
+                                    <div class="row g-2">
+                                        <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="categorias_vr[]" value="Parejas" id="cat1"><label class="form-check-label" for="cat1">💕 Parejas</label></div></div>
+                                        <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="categorias_vr[]" value="Amigos picante" id="cat2"><label class="form-check-label" for="cat2">🌶️ Amigos picante</label></div></div>
+                                        <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="categorias_vr[]" value="Amigos sin filtro" id="cat3"><label class="form-check-label" for="cat3">😂 Amigos sin filtro</label></div></div>
+                                        <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="categorias_vr[]" value="Secretos y confesiones" id="cat4"><label class="form-check-label" for="cat4">🤫 Secretos y confesiones</label></div></div>
+                                        <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="categorias_vr[]" value="Extremo" id="cat5"><label class="form-check-label" for="cat5">😈 Extremo</label></div></div>
+                                        <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="categorias_vr[]" value="Caos y diversion" id="cat6"><label class="form-check-label" for="cat6">🤪 Caos y diversión</label></div></div>
+                                        <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="categorias_vr[]" value="Sin censura" id="cat7"><label class="form-check-label" for="cat7">🖤 Sin censura</label></div></div>
+                                        <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="categorias_vr[]" value="Coqueteo y tension" id="cat8"><label class="form-check-label" for="cat8">💘 Coqueteo y tensión</label></div></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div style="margin-top: 10px; padding: 10px; background-color: #fdf4ff; border-radius: 5px;">
-                            <p style="font-size: 1rem;">Selecciona exactamente 5 categorías:</p>
-                            <label><input type="checkbox" name="categorias_vr[]" value="Parejas"> 💕 Parejas</label><br>
-                            <label><input type="checkbox" name="categorias_vr[]" value="Amigos picante"> 🌶️ Amigos picante</label><br>
-                            <label><input type="checkbox" name="categorias_vr[]" value="Amigos sin filtro"> 😂 Amigos sin filtro</label><br>
-                            <label><input type="checkbox" name="categorias_vr[]" value="Secretos y confesiones"> 🤫 Secretos y confesiones</label><br>
-                            <label><input type="checkbox" name="categorias_vr[]" value="Extremo"> 😈 Extremo</label><br>
-                            <label><input type="checkbox" name="categorias_vr[]" value="Caos y diversion"> 🤪 Caos y diversión</label><br>
-                            <label><input type="checkbox" name="categorias_vr[]" value="Sin censura"> 🖤 Sin censura</label><br>
-                            <label><input type="checkbox" name="categorias_vr[]" value="Coqueteo y tension"> 💘 Coqueteo y tensión</label>
+                        <!-- Juego 2: Qué probabilidad hay -->
+                        <div class="card p-3 mt-3 border-0 bg-light rounded-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="juegos[]" value="Que probabilidad hay" id="juegoProb">
+                                <label class="form-check-label fw-bold" for="juegoProb">
+                                    ¿Qué probabilidad hay? ($99.900) - 250 cartas y 5 categorías fijas.
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Juego 3: Yo nunca nunca -->
+                        <div class="card p-3 mt-3 border-0 bg-light rounded-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="juegos[]" value="Yo nunca nunca" id="juegoNunca">
+                                <label class="form-check-label fw-bold" for="juegoNunca">
+                                    Yo nunca nunca ($99.900) - 250 cartas para descubrir secretos.
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Juego 4: Qué prefieres -->
+                        <div class="card p-3 mt-3 border-0 bg-light rounded-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="juegos[]" value="Que prefieres" id="juegoPref">
+                                <label class="form-check-label fw-bold" for="juegoPref">
+                                    ¿Qué prefieres? ($80.000) - 200 cartas de debates y dilemas.
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <!-- Juego 2: Qué probabilidad hay -->
-                <div class="juego-card" style="margin-top: 15px;">
-                    <label>
-                        <input type="checkbox" name="juegos[]" value="Que probabilidad hay">
-                        <strong>¿Qué probabilidad hay?</strong> ($99.900) - 250 cartas y 5 categorías fijas.
-                    </label>
-                </div>
+                <!-- SECCIÓN 2: DATOS DE ENVÍO Y CONTACTO -->
+                <section class="formulario-section section-datos">
+                    <h2 class="fw-bold fs-4 mb-1" style="color: #831843;">Tus datos de envío 📦</h2>
+                    <p class="text-muted mb-4">Por favor completa la información para hacer llegar tu pedido</p>
 
-                <!-- Juego 3: Yo nunca nunca -->
-                <div class="juego-card" style="margin-top: 15px;">
-                    <label>
-                        <input type="checkbox" name="juegos[]" value="Yo nunca nunca">
-                        <strong>Yo nunca nunca</strong> ($99.900) - 250 cartas para descubrir secretos.
-                    </label>
-                </div>
+                    <div class="row g-3">
+                        <div class="datos col-md-6">
+                            <label for="nombre" class="form-label fw-semibold">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ej. Lesly Nathalia Guluma Paloma" pattern="[A-Za-zÀ-ÿ\s]+" title="Por favor ingresa solo letras y espacios" required>
+                        </div>
 
-                <!-- Juego 4: Qué prefieres -->
-                <div class="juego-card" style="margin-top: 15px;">
-                    <label>
-                        <input type="checkbox" name="juegos[]" value="Que prefieres">
-                        <strong>¿Qué prefieres?</strong> ($80.000) - 200 cartas de debates y dilemas.
-                    </label>
-                </div>
-            </div>
-    </section>
+                        <div class="datos col-md-6">
+                            <label for="email" class="form-label fw-semibold">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="natuchi@gmail.com" required>
+                        </div>
 
-    <!-- SECCIÓN 2: DATOS DE ENVÍO Y CONTACTO -->
-    <section class="formulario-section section-datos">
-        <h2>Tus datos de envío 📦</h2>
-        <p>Por favor completa la información para hacer llegar tu pedido</p>
+                        <div class="datos col-md-6">
+                            <label for="telefono" class="form-label fw-semibold">Teléfono / WhatsApp:</label>
+                            <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="Ej. 3201234567" pattern="[0-9]+" title="Por favor ingresa solo números" required>
+                        </div>
 
-        <form action="#" method="POST">
-            <div class="datos">
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ej. Lesly Nathalia Guluma Paloma" pattern="[A-Za-zÀ-ÿ\s]+" title="Por favor ingresa solo letras y espacios" required>
-            </div>
+                        <div class="datos col-md-6">
+                            <label for="departamento" class="form-label fw-semibold">Departamento:</label>
+                            <select id="departamento" name="departamento" class="form-select" required>
+                                <option value="" disabled selected>Selecciona tu departamento</option>
+                                <option value="Amazonas">Amazonas</option>
+                                <option value="Antioquia">Antioquia</option>
+                                <option value="Arauca">Arauca</option>
+                                <option value="Atlántico">Atlántico</option>
+                                <option value="Bolívar">Bolívar</option>
+                                <option value="Boyacá">Boyacá</option>
+                                <option value="Caldas">Caldas</option>
+                                <option value="Caquetá">Caquetá</option>
+                                <option value="Casanare">Casanare</option>
+                                <option value="Cauca">Cauca</option>
+                                <option value="Cesar">Cesar</option>
+                                <option value="Chocó">Chocó</option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Cundinamarca">Cundinamarca</option>
+                                <option value="Guainía">Guainía</option>
+                                <option value="Guaviare">Guaviare</option>
+                                <option value="Huila">Huila</option>
+                                <option value="La Guajira">La Guajira</option>
+                                <option value="Magdalena">Magdalena</option>
+                                <option value="Meta">Meta</option>
+                                <option value="Nariño">Nariño</option>
+                                <option value="Norte de Santander">Norte de Santander</option>
+                                <option value="Putumayo">Putumayo</option>
+                                <option value="Quindío">Quindío</option>
+                                <option value="Risaralda">Risaralda</option>
+                                <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                                <option value="Santander">Santander</option>
+                                <option value="Sucre">Sucre</option>
+                                <option value="Tolima">Tolima</option>
+                                <option value="Valle del Cauca">Valle del Cauca</option>
+                                <option value="Vaupés">Vaupés</option>
+                                <option value="Vichada">Vichada</option>
+                            </select>
+                        </div>
 
-            <div class="datos">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="natuchi@gmail.com" required>
-            </div>
+                        <div class="datos col-md-4">
+                            <label for="ciudad" class="form-label fw-semibold">Ciudad o Municipio:</label>
+                            <input type="text" id="ciudad" name="ciudad" class="form-control" placeholder="Escribe la ciudad o municipio" required>
+                        </div>
+                        
+                        <div class="datos col-md-4">
+                            <label for="localidad" class="form-label fw-semibold">Localidad:</label>
+                            <input type="text" id="localidad" name="localidad" class="form-control" placeholder="Escribe la localidad o comuna" required>
+                        </div>
 
-            <div class="datos">
-                <label for="telefono">Teléfono / WhatsApp:</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="Ej. 3201234567" pattern="[0-9]+" title="Por favor ingresa solo números" required>
-            </div>
+                        <div class="datos col-md-4">
+                            <label for="barrio" class="form-label fw-semibold">Barrio:</label>
+                            <input type="text" id="barrio" name="barrio" class="form-control" placeholder="Escribe el barrio o zona" required>
+                        </div>
 
-            <div class="datos">
-                <label for="departamento">Departamento:</label>
-                <select id="departamento" name="departamento" required>
-                    <option value="" disabled selected>Selecciona tu departamento</option>
-                    <option value="Amazonas">Amazonas</option>
-                    <option value="Antioquia">Antioquia</option>
-                    <option value="Arauca">Arauca</option>
-                    <option value="Atlántico">Atlántico</option>
-                    <option value="Bolívar">Bolívar</option>
-                    <option value="Boyacá">Boyacá</option>
-                    <option value="Caldas">Caldas</option>
-                    <option value="Caquetá">Caquetá</option>
-                    <option value="Casanare">Casanare</option>
-                    <option value="Cauca">Cauca</option>
-                    <option value="Cesar">Cesar</option>
-                    <option value="Chocó">Chocó</option>
-                    <option value="Córdoba">Córdoba</option>
-                    <option value="Cundinamarca">Cundinamarca</option>
-                    <option value="Guainía">Guainía</option>
-                    <option value="Guaviare">Guaviare</option>
-                    <option value="Huila">Huila</option>
-                    <option value="La Guajira">La Guajira</option>
-                    <option value="Magdalena">Magdalena</option>
-                    <option value="Meta">Meta</option>
-                    <option value="Nariño">Nariño</option>
-                    <option value="Norte de Santander">Norte de Santander</option>
-                    <option value="Putumayo">Putumayo</option>
-                    <option value="Quindío">Quindío</option>
-                    <option value="Risaralda">Risaralda</option>
-                    <option value="San Andrés y Providencia">San Andrés y Providencia</option>
-                    <option value="Santander">Santander</option>
-                    <option value="Sucre">Sucre</option>
-                    <option value="Tolima">Tolima</option>
-                    <option value="Valle del Cauca">Valle del Cauca</option>
-                    <option value="Vaupés">Vaupés</option>
-                    <option value="Vichada">Vichada</option>
-                </select>
-            </div>
+                        <div class="datos col-12">
+                            <label for="direccion" class="form-label fw-semibold">Dirección:</label>
+                            <input type="text" id="direccion" name="direccion" class="form-control" placeholder="Ej. Calle 54c sur # 87 - 21" required>
+                        </div>
 
-            <div class="datos">
-                <label for="ciudad">Ciudad o Municipio:</label>
-                <input type="text" id="ciudad" name="ciudad" placeholder="Escribe la ciudad o municipio" required>
-            </div>
-            
-            <div class="datos">
-                <label for="localidad">Localidad:</label>
-                <input type="text" id="localidad" name="localidad" placeholder="Escribe la localidad o comuna" required>
-            </div>
+                        <div class="datos col-12">
+                            <label for="observaciones" class="form-label fw-semibold">Observaciones de la dirección (Torre, Apto, Piso, etc.):</label>
+                            <textarea id="observaciones" name="observaciones" class="form-control" rows="3" placeholder="Ej. Torre 2, Apto 501. Timbrar en portería."></textarea>
+                        </div>
+                    </div>
 
-            <div class="datos">
-                <label for="barrio">Barrio:</label>
-                <input type="text" id="barrio" name="barrio" placeholder="Escribe el barrio o zona" required>
-            </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn text-white px-5 py-3 rounded-pill fw-bold shadow" style="background-color: #831843; font-size: 1.1rem;">Confirmar Pedido 🔥</button>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </main>
 
-            <div class="datos">
-                <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" name="direccion" placeholder="Ej. Calle 54c sur # 87 - 21" required>
-            </div>
-
-            <div class="datos">
-                <label for="observaciones">Observaciones de la dirección (Nombre del conjunto, Torre, Apto, Piso, etc.):</label>
-                <textarea id="observaciones" name="observaciones" rows="3" placeholder="Ej. Torre 2, Apto 501. Timbrar en portería."></textarea>
-            </div>
-
-            <div style="text-align: center; margin-top: 20px;">
-                <button type="submit" style="padding: 12px 25px; background-color: #831843; color: white; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer;">Confirmar Pedido 🔥</button>
-            </div>
-        </form>
-    </section>
-</main>
-    <footer>
-        <p class="p-footer">&copy; 2026 Verdad o Reto. Todos los derechos reservados.</p>
-        <ul>
-            <li><a href="https://instagram.com/beber_o_confesar" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+    <footer class="text-center py-4 text-muted border-top mt-5 bg-white">
+        <p class="p-footer mb-1">&copy; 2026 Verdad o Reto. Todos los derechos reservados.</p>
+        <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="https://instagram.com/beber_o_confesar" target="_blank" rel="noopener noreferrer" class="text-decoration-none" style="color: #831843;">Instagram</a></li>
         </ul>
     </footer>
 
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
