@@ -1,0 +1,314 @@
+/* ==========================================
+   Estilos generales y tipografía
+   ========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #fdf4ff; 
+    color: #2b2b2b;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #d9a1e6; 
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 2px solid #d68eab;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}   
+
+.nav-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+}
+
+/* ==========================================
+   Títulos y textos
+   ========================================== */
+h1 { 
+    color: #831843; 
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 { 
+    color: #831843; 
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+h3 { 
+    color: #2e1f2d; 
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+ol {
+    color: #7b1b8f; 
+    list-style-position: inside;
+    text-align: center;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+ol li {
+    font-size: 1.3rem;
+}
+
+li div {
+    text-align: center;
+}
+
+strong { 
+    color: #831843;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+p { 
+    color: #200720; 
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+li {
+    text-align: center;
+}
+
+/* ==========================================
+   Imágenes
+   ========================================== */
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.images-1 img {
+    width: auto;
+    border: 2px solid #d68eab;
+    border-radius: 10px;  
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==========================================
+   Navegación y pie de página
+   ========================================== */
+.p-footer { 
+    color: #6262ca; 
+}
+
+/* ==========================================
+   Márgenes y fondos
+   ========================================== */
+.contrato-todosi {
+    border: 10px solid #b180b9;
+    background-color: #ebbaf5;
+}
+
+.jugar-section {
+    padding: 20px;
+}
+
+/* ==========================================
+   Catálogo de pedir en línea
+   ========================================== */
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna en móvil */
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .catalogo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+.juego-card {
+    background-color: #fdf4ff;
+    border: 1px solid #d68eab;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.juego-card h3 {
+    color: #831843;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.juego-card h2 {    
+    color: #2e1f2d;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.juego-card p {             
+    color: #200720;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.precio {
+    color: #831843;
+    font-size: 1.5rem;
+    font-weight: bold;
+}          
+
+/* ==========================================
+   Formulario para pedir en línea y Grid Layout
+   ========================================== */
+.formulario-section {
+    width: 100%;
+}
+
+.datos {
+    margin-bottom: 15px;
+    border: none;
+    padding: 0;
+}
+
+.datos label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.datos input,
+.datos select,
+.datos textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d68eab;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.juego-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #d68eab;
+    border-radius: 5px;
+}
+
+.presentation {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #d68eab;
+    border-radius: 5px;
+}
+
+/* --- Mobile First --- */
+.pedido {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "juegos"
+        "datos";
+    gap: 30px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Asignación a hijos */
+.pedido > *:nth-child(1) {
+    grid-area: juegos;
+}
+
+.pedido > *:nth-last-child(1) {
+    grid-area: datos;
+}
+
+/* --- Breakpoint Desktop --- */
+@media (min-width: 1024px) {
+    .pedido {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "juegos datos";
+    }
+}
+
+/* ==========================================
+   Grid para el index mobile
+   ========================================== */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "hero"
+        "info"
+        "image";
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.home-hero { grid-area: hero; }
+.home-info { grid-area: info; }
+.home-image { grid-area: image; }
+
+/* organizador columnas */
+@media (min-width: 1024px) {
+    .home-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "hero hero"
+            "info image";
+    }
+}
+
+/* ==========================================
+   Pseudoclases (Hover, Focus, Active)
+   ========================================== */
+
+/* Efecto al pasar el mouse */
+.navbar-nav .nav-link:hover,
+.btn:hover {
+    color: #831843;
+}
+
+/* Efecto al seleccionar */
+.navbar-nav .nav-link:focus, 
+button:focus,
+.btn:focus {
+    outline: 3px solid #b180b9;
+    outline-offset: 2px;
+}
+
+/* Efecto al hacer clic */
+.navbar-nav .nav-link:active, 
+button:active,
+.btn:active {
+    background-color: #d9a1e6;
+    color: #831843;
+}
